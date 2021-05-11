@@ -18,7 +18,7 @@ import hello.launch
 
 urlpatterns = [
     path("", hello.views.index, name="index"),
-    path("launch", hello.launch.index, name="index"),
+    path("launch/", hello.launch.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
 ]
